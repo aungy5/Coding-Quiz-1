@@ -128,7 +128,7 @@ function compare(event) {
         // Appending the element to the div so that it will appear in the correct place on the page
         questionsDiv.appendChild(createH1);
     
-        // Creating the paragraph that will display the 
+        // Creating the paragraph that will display the final score to the user 
         var createP = document.createElement("p");
         createP.setAttribute("id", "createP");
     
@@ -190,7 +190,7 @@ function compare(event) {
                 allScores.push(finalScore);
                 var newScore = JSON.stringify(allScores);
                 localStorage.setItem("allScores", newScore);
-                // Travels to final page
+                // Brings the user to the scorepage upon entry of score
                 window.location.replace("./scorePage.html");
             }
         });
